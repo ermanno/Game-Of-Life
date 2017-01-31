@@ -1,5 +1,7 @@
 * Game Of Life
 
+#+ATTR_HTML: alt="Game Of Life image: Glider"
+#+ATTR_HTML: width="300" style="border:2px solid black;"
 [[./Gospers_glider_gun.gif]]
 
 For a space that is "alive" or "populated":
