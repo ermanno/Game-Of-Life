@@ -1,9 +1,9 @@
 * Game Of Life
 
-[[./Gospers_glider_gun.gif]]
-
 For a space that is "alive" or "populated":
 - each cell with one or no neighbors dies, as if by solitude
 - each cell with four or more neighbors dies, as if by overpopulation
 - each cell with two or three neighbors survives
 - for a space that is "empty", each cell with three neighbors becomes "alive"
+
+[[./Gospers_glider_gun.gif]]
