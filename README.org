@@ -1,7 +1,11 @@
-* Game Of Life
+* Game of Life
+The /Game of Life/ is a no-player game, whose evolution is completely determined by the system's initial state. We have a grid of /cells/, each of which can be seen as being in one of two
+possible states: alive or dead (alternatively, populated or unpopulated). We have an initial state (the /seed/ of the system), and the next configuration is determined according to the
+following rules:
 
-For a space that is "alive" or "populated":
-- each cell with one or no neighbors dies, as if by solitude
-- each cell with four or more neighbors dies, as if by overpopulation
-- each cell with two or three neighbors survives
-- for a space that is "empty", each cell with three neighbors becomes "alive"
+- any live cell with fewer than two live neighbours dies, as if caused by underpopulation.
+- any live cell with two or three live neighbours lives on to the next generation.
+- any live cell with more than three live neighbours dies, as if by overpopulation.
+- any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.
+
+The previous rules are applied simultaneously to every cell, at each /tick/.
