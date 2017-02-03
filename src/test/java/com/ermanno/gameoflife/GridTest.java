@@ -121,4 +121,16 @@ public class GridTest {
         boolean nextState = grid.getNextState(1, 1);
         assertTrue(nextState);
     }
+    
+    @Test
+    public void cannotAnalyseTheNodesOutsideTheGridTest() {
+        boolean[][] cells = {
+                {true, false, false},
+                {false, false, true},
+                {false, true, false}
+        };
+        Grid grid = Grid.create(cells);
+        int numNeighbours= grid.numLiveNeighbours(0, 1);
+        assertEquals(2, numNeighbours);
+    }
 }
